@@ -1,0 +1,101 @@
+[options]
+#allow_bold = true
+#audible_bell = false
+#bold_is_bright = true
+#clickable_url = true
+#dynamic_title = true
+font = Roboto Mono Nerd Font 18
+#fullscreen = true
+#icon_name = terminal
+mouse_autohide = true
+#scroll_on_output = false
+#scroll_on_keystroke = true
+# Length of the scrollback buffer, 0 disabled the scrollback buffer
+# and setting it to a negative value means "infinite scrollback"
+scrollback_lines = 10000
+#search_wrap = true
+#urgent_on_bell = true
+#hyperlinks = false
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+#browser = xdg-open
+
+# "system", "on" or "off"
+#cursor_blink = system
+
+# "block", "underline" or "ibeam"
+#cursor_shape = block
+
+# Hide links that are no longer valid in url select overlay mode
+#filter_unmatched_urls = true
+
+# Emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+# set size hints for the window
+#size_hints = false
+
+# "off", "left" or "right"
+#scrollbar = off
+
+[colors]
+cursor = #ADD8E6
+# cursor_foreground = #2e3440
+cursor_foreground = #000000
+
+foreground = #FCFCFA
+foreground_bold = #FCFCFA
+
+background = #000000
+# background = #2e3440
+# background = rgba(45, 42, 46, 0.9)
+
+highlight = #4c566a
+#000000
+#FF5555
+#50fa7b
+#f1fa8c
+#bd93f9
+#ff79c6
+#8be9fd
+#bfbfbf
+
+#4d4d4d
+#ff6e67
+#5af78e
+#f4f99d
+#caa9fa
+#ff92d0
+#9aedfe
+#e6e6e6
+
+
+color0  = #403E41
+color1  = #FF6188
+color2  = #A9DC76
+color3  = #FFD866
+color4  = #FC9867
+color5  = #AB9DF2
+color6  = #78DCE8
+color7  = #FCFCFA
+color8  = #727072
+color9  = #FF6188
+color10 = #A9DC76
+color11 = #FFD866
+color12 = #FC9867
+color13 = #AB9DF2
+color14 = #78DCE8
+color15 = #FCFCFA
+
+[hints]
+#font = Monospace 12
+#foreground = #dcdccc
+#background = #3f3f3f
+active_foreground = #FCFCFA
+active_background = rgba(45, 42, 46, 1)
+#padding = 2
+border = #000000
+border_width = 0
+#roundness = 2.0
+
+# vim: ft=dosini cms=#%s
