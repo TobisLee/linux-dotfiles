@@ -235,9 +235,13 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 #          alias           #
 ############################
 
-alias ls='ls --color'
-alias la='ls -lh'
-alias ll='ls -al'
+# alias ls='ls --color'
+# alias la='ls -la'
+# alias ll='ls -lh'
+alias ls='exa --color=always --group-directories-first'
+alias la='exa -la --color=always --group-directories-first'
+alias ll='exa -l --color=always --group-directories-first'
+alias fh='free -h'
 
 alias nsmi='watch -n 1 nvidia-smi'
 alias non='sudo tee /proc/acpi/bbswitch <<< ON'
@@ -256,9 +260,10 @@ alias jl='jlupc'
 
 alias ssh2vr1080='ssh tlss@49.140.126.71 -p 22022'
 alias ssh2vr2080='ssh tlss@49.140.126.71 -p 22023'
-alias ssh2b234='ssh tlss@59.72.109.78 -p 5002'
+alias ssh2b234='ssh tlss@59.72.109.78 -p 50022'
 alias ssh2nano='ssh nano@192.168.199.112'
 alias ssh2laptop='ssh lipman@49.140.185.17'
+alias ssh2aliyun='ssh tlss@120.26.173.102 -p 50022'
 #alias vnc2vr1080='vncviewer 49.140.126.71:2'
 #alias vnc2vr2080='vncviewer 49.140.126.71:2'
 
@@ -269,6 +274,10 @@ alias ra='ranger'     # terminal file manager
 alias M='mocp'        # terminal music player
 alias pf='pfetch'     # show system info
 alias lg="lazygit"    # terminal git manager
+alias btop='bashtop'
+alias bp='btop'
+alias ht='htop'
+alias gl='glances'
 
 ### Docker ###
 alias addusertodocker='sudo usermod -aG docker '
@@ -304,3 +313,8 @@ export VISUAL=/usr/bin/nvim
 
 eval $(keychain --eval --quiet id_rsa_b23422080ti)
 eval $(keychain --eval --quiet id_rsa_github)
+eval $(keychain --eval --quiet id_rsa_aliyun)
+eval $(keychain --eval --quiet id_rsa_aliyun_gitea)
+
+# z.lua
+eval "$(lua /home/tlss/z.lua --init zsh)"
