@@ -278,6 +278,8 @@ alias btop='bashtop'
 alias bp='btop'
 alias ht='htop'
 alias gl='glances'
+alias grep='rg'
+alias cat='bat'
 
 ### Docker ###
 alias addusertodocker='sudo usermod -aG docker '
@@ -318,3 +320,5 @@ eval $(keychain --eval --quiet id_rsa_aliyun_gitea)
 
 # z.lua
 eval "$(lua /home/tlss/z.lua --init zsh)"
+
+source /home/tlss/.config/broot/launcher/bash/br
