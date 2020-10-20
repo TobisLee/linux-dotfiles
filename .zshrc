@@ -314,9 +314,12 @@ export VISUAL=/usr/bin/nvim
 # ssh-add ~/.ssh/id_rsa_github
 
 eval $(keychain --eval --quiet id_rsa_b23422080ti)
+eval $(keychain --eval --quiet id_rsa_b23421080ti)
 eval $(keychain --eval --quiet id_rsa_github)
 eval $(keychain --eval --quiet id_rsa_aliyun)
 eval $(keychain --eval --quiet id_rsa_aliyun_gitea)
+# eval $(keychain --eval --quiet id_rsa_vrlab_gitea)
+eval $(keychain --eval --quiet id_rsa_tlss_vrlab_gitea)
 
 # z.lua
 eval "$(lua /home/tlss/z.lua --init zsh)"
